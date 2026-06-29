@@ -4,4 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: 'https://github.com/Vojtech-M/muj-react-projekt', // <-- SEM DOPIŠ PŘESNÝ NÁZEV SVÉHO GITHUB REPOZITÁŘE (včetně lomítek)
 })

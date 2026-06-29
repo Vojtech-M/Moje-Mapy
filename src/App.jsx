@@ -98,7 +98,7 @@ function App() {
               </a>
             </li>
             <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
+              <a href="hhttps://vojtech-m.github.io/" target="_blank">
                 <svg
                   className="button-icon"
                   role="presentation"

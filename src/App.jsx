@@ -22,7 +22,7 @@ function App() {
             Puvodni ukazkovy o   dstavec je tu jen jako poznamka pro dalsi upravy.
             <button
 
-            
+
           type="button"
           className="counter"
           onClick={() => setCount((count) => count + 1)}
@@ -48,7 +48,7 @@ function App() {
             <use href="/icons.svg#documentation-icon"></use>
           </svg>
           <h2>Mapy a gastro</h2>
-          <p>Nevíte kam na výlet nebo jídlo ? mrkněte sem </p>
+          <p>Nevíte kam na výlet nebo jídlo ? mrkněte sem :D</p>
           <ul>
             <li>
               <a href="https://mapy.com/s/hotalufofo" target="_blank">

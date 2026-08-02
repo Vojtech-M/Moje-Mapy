@@ -1,0 +1,29 @@
+[
+  {
+    "id": "vylety-a-mista",
+    "category": "Mapy a gastro",
+    "title": "Výlety a zajímavá místa",
+    "description": "Nevíte kam na výlet nebo jídlo? Mrkněte sem.",
+    "icon": "🌲",
+    "mapUrl": "https://mapy.com/s/ranadumutu",
+    "content": "Zde je výběr mých nejoblíbenějších turistických tras a vyhlídek..."
+  },
+    {
+    "id": "vylety-a-mista",
+    "category": "Mapy a gastro",
+    "title": "Výlety a zajímavá místa",
+    "description": "Nevíte kam na výlet nebo jídlo? Mrkněte sem.",
+    "icon": "🌲",
+    "mapUrl": "https://mapy.com/s/ranadumutu",
+    "content": "Zde je výběr mých nejoblíbenějších turistických tras a vyhlídek..."
+  },
+  {
+    "id": "gastro-tipy",
+    "category": "Mapy a gastro",
+    "title": "Gastro typy",
+    "description": "Moje osvědčené restaurace, kavárny a bistro tipy.",
+    "icon": "🍔",
+    "mapUrl": "https://mapy.cz/s/ranadumutu",
+    "content": "Sbírka skvělých podniků, které stojí za návštěvu..."
+  }
+]

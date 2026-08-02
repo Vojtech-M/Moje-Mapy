@@ -1,15 +1,22 @@
 const posts = [
   {
-    id: 1,
-    title: "First Blog Post",
-    excerpt: "This is a short intro to the first blog post.",
-    content: "This is the full content of the first blog post. Welcome!"
+    id: "vylety-a-mista",
+    title: "Výlety a zajímavá místa",
+    category: "Mapy a gastro",
+    description: "Nevíte kam na výlet nebo jídlo? Mrkněte sem.",
+    mapUrl: "https://mapy.cz/s/ranadumutu",
+    // Standard embed link for Mapy.cz iframe:
+    embedUrl: "https://frame.mapy.cz/s/ranadumutu", 
+    content: "Zde je výběr mých nejoblíbenějších turistických tras a vyhlídek..."
   },
   {
-    id: 2,
-    title: "Second Blog Post",
-    excerpt: "A quick teaser of the second post...",
-    content: "Full content of the second blog post goes here."
+    id: "gastro-tipy",
+    title: "Gastro typy",
+    category: "Mapy a gastro",
+    description: "Moje osvědčené restaurace, kavárny a bistro tipy.",
+    mapUrl: "https://mapy.cz/s/ranadumutu",
+    embedUrl: "https://frame.mapy.cz/s/ranadumutu",
+    content: "Sbírka skvělých podniků, které stojí za návštěvu..."
   }
 ];
 

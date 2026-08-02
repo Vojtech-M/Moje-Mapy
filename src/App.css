@@ -1,22 +1,197 @@
+/* Base styles */
+:root {
+  --bg-color: #13131a;
+  --card-bg: #1a1a24;
+  --card-item-bg: #242432;
+  --card-item-hover: #2c2c3e;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --accent-color: #22c55e;
+  --text-main: #f3f4f6;
+  --text-muted: #9ca3af;
+}
+
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background: #f7f7f7;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
 .container {
-  padding: 20px;
-  max-width: 800px;
-  margin: auto;
-  background: white;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px;
 }
 
-.post-preview {
-  margin-bottom: 20px;
+/* Compact Header */
+.main-header {
+  background-color: rgba(19, 19, 26, 0.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
-a {
-  color: #007bff;
+.header-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
+  color: var(--text-main);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: var(--text-main);
+}
+
+/* Home Grid Layout */
+.home-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.card-section {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.section-header h2 {
+  margin: 0 0 4px 0;
+  font-size: 1.2rem;
+}
+
+.section-header p {
+  margin: 0 0 20px 0;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+/* Rounded Rectangle Map Cards */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.map-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--card-item-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 14px;
+  text-decoration: none;
+  color: var(--text-main);
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.map-card:hover {
+  background-color: var(--card-item-hover);
+  transform: translateY(-2px);
+}
+
+.card-icon {
+  background: rgba(34, 197, 94, 0.15);
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Flex buttons */
+.flex-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.action-btn {
+  background-color: var(--card-item-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 10px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background-color 0.2s;
+}
+
+.action-btn:hover {
+  background-color: var(--card-item-hover);
+}
+
+/* Post Detail Page */
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.back-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.map-wrapper {
+  margin: 12px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+}
+
+.external-map-btn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: #000;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+
+.map-card, 
+.external-map-btn, 
+.back-link {
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.map-card * {
+  pointer-events: none; /* Ensures clicking the icon or text inside triggers the card link directly */
 }

@@ -21,6 +21,8 @@ function App() {
             Tento text zustava schovany, aby stranka pusobila jednoduseji.
             Puvodni ukazkovy o   dstavec je tu jen jako poznamka pro dalsi upravy.
             <button
+
+            
           type="button"
           className="counter"
           onClick={() => setCount((count) => count + 1)}
@@ -101,7 +103,9 @@ function App() {
               </a>
             </li>
 
- 
+          </ul>
+        </div>
+
  
  
           {/*
@@ -133,9 +137,7 @@ function App() {
            
 
 
-          </ul>
-        </div>
-
+        
 
       </section>
       <div className="ticks"></div>
